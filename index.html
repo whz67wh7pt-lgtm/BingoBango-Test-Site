@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Premium residential property maintenance, improvements and finishing services across Hertfordshire and surrounding areas."
+    content="Reliable handyman and property maintenance services across Hertfordshire. Repairs, decorating, maintenance, improvements and everyday jobs around the home."
   >
 
   <style>
@@ -47,13 +47,13 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(247, 246, 242, 0.96);
+      background: rgba(247, 246, 242, 0.97);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     }
 
     .header-inner {
-      min-height: 92px;
+      min-height: 108px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -62,22 +62,14 @@
 
     .brand {
       text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      line-height: 1;
+      display: inline-flex;
+      align-items: center;
     }
 
-    .brand-name {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 28px;
-      letter-spacing: 0.18em;
-    }
-
-    .brand-sub {
-      margin-top: 8px;
-      font-size: 10px;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
+    .site-logo {
+      width: 220px;
+      height: auto;
+      display: block;
     }
 
     .nav {
@@ -124,7 +116,7 @@
     /* Hero */
 
     .hero {
-      min-height: 760px;
+      min-height: 700px;
       display: flex;
       align-items: center;
       position: relative;
@@ -149,7 +141,7 @@
     .eyebrow {
       margin: 0 0 22px;
       font-size: 12px;
-      letter-spacing: 0.3em;
+      letter-spacing: 0.26em;
       text-transform: uppercase;
     }
 
@@ -157,17 +149,17 @@
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
       font-weight: 400;
-      font-size: clamp(48px, 7vw, 84px);
-      line-height: 0.98;
+      font-size: clamp(48px, 7vw, 78px);
+      line-height: 1;
       letter-spacing: -0.03em;
     }
 
     .hero-text {
-      max-width: 610px;
+      max-width: 620px;
       margin: 28px 0 0;
       font-size: 19px;
       line-height: 1.65;
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.92);
     }
 
     .hero-actions {
@@ -190,7 +182,7 @@
     /* Intro */
 
     .intro {
-      padding: 110px 0;
+      padding: 100px 0;
     }
 
     .intro-grid {
@@ -203,7 +195,7 @@
     .section-kicker {
       margin: 0;
       font-size: 12px;
-      letter-spacing: 0.28em;
+      letter-spacing: 0.26em;
       text-transform: uppercase;
       color: #777;
     }
@@ -216,8 +208,8 @@
       margin: 18px 0 0;
       font-family: Georgia, "Times New Roman", serif;
       font-weight: 400;
-      font-size: clamp(38px, 5vw, 58px);
-      line-height: 1.05;
+      font-size: clamp(38px, 5vw, 56px);
+      line-height: 1.08;
     }
 
     .intro-copy {
@@ -233,13 +225,13 @@
     /* Services */
 
     .services {
-      padding: 110px 0;
+      padding: 100px 0;
       background: #1b1b1b;
       color: #fff;
     }
 
     .services-heading {
-      max-width: 700px;
+      max-width: 720px;
     }
 
     .services .section-kicker {
@@ -267,7 +259,7 @@
     }
 
     .service-card h3 {
-      margin: 75px 0 16px;
+      margin: 72px 0 16px;
       font-family: Georgia, "Times New Roman", serif;
       font-size: 26px;
       font-weight: 400;
@@ -282,7 +274,7 @@
     /* Why */
 
     .why {
-      padding: 110px 0;
+      padding: 100px 0;
     }
 
     .why-grid {
@@ -324,7 +316,7 @@
     /* Projects */
 
     .projects {
-      padding: 110px 0;
+      padding: 100px 0;
       background: #ece9e2;
     }
 
@@ -388,7 +380,7 @@
     /* Testimonial */
 
     .testimonial {
-      padding: 110px 0;
+      padding: 100px 0;
       text-align: center;
     }
 
@@ -396,8 +388,8 @@
       max-width: 900px;
       margin: 0 auto;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(32px, 4vw, 50px);
-      line-height: 1.25;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.28;
       font-weight: 400;
     }
 
@@ -414,7 +406,7 @@
     /* Contact */
 
     .contact {
-      padding: 110px 0;
+      padding: 100px 0;
       background: #d7d2c7;
     }
 
@@ -454,6 +446,14 @@
       align-items: flex-start;
     }
 
+    .footer-logo {
+      width: 190px;
+      height: auto;
+      display: block;
+      background: #fff;
+      padding: 8px;
+    }
+
     .footer-links {
       display: flex;
       gap: 24px;
@@ -482,11 +482,15 @@
       }
 
       .header-inner {
-        min-height: 78px;
+        min-height: 92px;
+      }
+
+      .site-logo {
+        width: 185px;
       }
 
       .hero {
-        min-height: 680px;
+        min-height: 650px;
       }
 
       .intro-grid,
@@ -505,7 +509,7 @@
       }
 
       .project {
-        min-height: 480px;
+        min-height: 460px;
       }
 
       .why-image {
@@ -522,16 +526,13 @@
         width: min(100% - 28px, 1180px);
       }
 
-      .brand-name {
-        font-size: 20px;
-      }
-
-      .brand-sub {
-        font-size: 8px;
+      .site-logo {
+        width: 160px;
       }
 
       .nav .button {
         padding: 0 16px;
+        min-height: 46px;
       }
 
       .hero-content {
@@ -539,7 +540,7 @@
       }
 
       .hero h1 {
-        font-size: 48px;
+        font-size: 46px;
       }
 
       .hero-text {
@@ -552,7 +553,7 @@
       .projects,
       .testimonial,
       .contact {
-        padding: 80px 0;
+        padding: 75px 0;
       }
 
       .service-grid {
@@ -580,8 +581,11 @@
     <div class="container header-inner">
 
       <a class="brand" href="#top">
-        <span class="brand-name">A OFFORD</span>
-        <span class="brand-sub">Property Services</span>
+        <img
+          src="a-offord-logo.png"
+          alt="A Offord Property Services"
+          class="site-logo"
+        >
       </a>
 
       <nav class="nav">
@@ -600,15 +604,16 @@
       <div class="container">
 
         <div class="hero-content">
-          <p class="eyebrow">Property Services · Hertfordshire</p>
+          <p class="eyebrow">Property Maintenance · Hertfordshire</p>
 
           <h1>
-            Property improvements, finished properly.
+            Reliable property maintenance and handyman services.
           </h1>
 
           <p class="hero-text">
-            Reliable residential property maintenance, repairs and improvement
-            work delivered with care, attention to detail and a professional finish.
+            From everyday repairs and decorating to those jobs that never quite
+            get done, A Offord Property Services provides dependable help for
+            homes and rental properties.
           </p>
 
           <div class="hero-actions">
@@ -625,21 +630,22 @@
 
         <div>
           <p class="section-kicker">A Offord Property Services</p>
+
           <h2>
-            Dependable property work without the usual hassle.
+            Practical help with the jobs your property needs.
           </h2>
         </div>
 
         <div class="intro-copy">
           <p>
-            From smaller repairs and decorating through to wider property improvements,
-            A Offord Property Services provides a straightforward, high-quality service
-            for homeowners who care about how the finished job looks.
+            A Offord Property Services provides reliable handyman and property
+            maintenance services for homeowners, landlords and rental properties.
           </p>
 
           <p>
-            Clear communication, tidy workmanship and attention to the final details
-            are at the centre of every project.
+            Whether it is a small repair, decorating work, ongoing maintenance
+            or a list of jobs around the home, the aim is simple: turn up,
+            communicate clearly and get the work completed properly.
           </p>
         </div>
 
@@ -651,43 +657,55 @@
 
         <div class="services-heading">
           <p class="section-kicker">Services</p>
-          <h2>Practical expertise across your property.</h2>
+
+          <h2>
+            Reliable help across your home or property.
+          </h2>
         </div>
 
         <div class="service-grid">
 
           <article class="service-card">
             <span class="service-number">01</span>
-            <h3>Property Maintenance</h3>
+
+            <h3>General Handyman</h3>
+
             <p>
-              Reliable maintenance and repair work to keep your home looking and
-              functioning as it should.
+              Shelves, fittings, adjustments, repairs and everyday jobs around
+              the home.
             </p>
           </article>
 
           <article class="service-card">
             <span class="service-number">02</span>
-            <h3>Decorating & Finishing</h3>
+
+            <h3>Property Maintenance</h3>
+
             <p>
-              Careful preparation and finishing work for clean, considered interiors.
+              General maintenance and ongoing repair work for homeowners,
+              landlords and rental properties.
             </p>
           </article>
 
           <article class="service-card">
             <span class="service-number">03</span>
-            <h3>Repairs & Improvements</h3>
+
+            <h3>Decorating & Finishing</h3>
+
             <p>
-              From everyday repairs to upgrades that improve the look and usability
-              of your property.
+              Painting, preparation, touch ups and finishing work to keep your
+              property looking its best.
             </p>
           </article>
 
           <article class="service-card">
             <span class="service-number">04</span>
-            <h3>General Property Works</h3>
+
+            <h3>Repairs & Improvements</h3>
+
             <p>
-              Versatile support for those awkward jobs that often require more than
-              one trade or skill.
+              Small improvements, remedial work and practical upgrades around
+              the property.
             </p>
           </article>
 
@@ -703,35 +721,46 @@
 
         <div>
           <p class="section-kicker">Why A Offord</p>
-          <h2>A better standard of property service.</h2>
+
+          <h2>
+            Straightforward service from start to finish.
+          </h2>
 
           <div class="why-list">
 
             <div class="why-item">
-              <h3>Careful workmanship</h3>
+              <h3>Reliable service</h3>
+
               <p>
-                Work carried out with attention to finish, detail and the surrounding property.
+                Clear communication and a straightforward approach from the
+                first conversation through to completion.
               </p>
             </div>
 
             <div class="why-item">
-              <h3>Clear communication</h3>
+              <h3>Careful workmanship</h3>
+
               <p>
-                Straightforward advice, realistic expectations and no unnecessary confusion.
+                Work carried out properly, with attention paid to the details
+                and the surrounding property.
               </p>
             </div>
 
             <div class="why-item">
               <h3>Respect for your home</h3>
+
               <p>
-                A tidy and considerate approach throughout the job, not just at the end.
+                A tidy and considerate approach while working in and around your
+                property.
               </p>
             </div>
 
             <div class="why-item">
-              <h3>One point of contact</h3>
+              <h3>Flexible help</h3>
+
               <p>
-                A simple way to manage a range of maintenance and improvement work.
+                Ideal for one off jobs, ongoing property maintenance or a list
+                of smaller tasks that need sorting.
               </p>
             </div>
 
@@ -745,20 +774,23 @@
       <div class="container">
 
         <p class="section-kicker">Recent Work</p>
-        <h2>Considered improvements, beautifully finished.</h2>
+
+        <h2>
+          Reliable help with the jobs your property needs.
+        </h2>
 
         <div class="project-grid">
 
           <div class="project project-one">
             <div class="project-label">
-              <strong>Interior Improvements</strong>
+              <strong>Property Repairs</strong>
               <span>Residential Property</span>
             </div>
           </div>
 
           <div class="project project-two">
             <div class="project-label">
-              <strong>Finishing & Decoration</strong>
+              <strong>Decorating & Maintenance</strong>
               <span>Residential Property</span>
             </div>
           </div>
@@ -772,7 +804,7 @@
       <div class="container">
 
         <blockquote>
-          “Professional, reliable and genuinely takes pride in the finished result.”
+          “Professional, reliable and takes real pride in getting the job done properly.”
         </blockquote>
 
         <cite>Example customer testimonial</cite>
@@ -784,14 +816,20 @@
       <div class="container contact-grid">
 
         <div>
-          <p class="section-kicker">Start a Project</p>
-          <h2>Have a property job in mind?</h2>
+          <p class="section-kicker">Get in Touch</p>
+
+          <h2>
+            Got a job that needs sorting?
+          </h2>
+
           <p>
-            Tell us a little about the work you need and we can discuss the next step.
+            Tell us what you need help with and we can discuss the work,
+            timescale and next step.
           </p>
         </div>
 
         <div class="contact-actions">
+
           <a
             href="mailto:hello@example.com"
             class="button button-dark"
@@ -805,6 +843,7 @@
           >
             Call 07000 000000
           </a>
+
         </div>
 
       </div>
@@ -817,10 +856,13 @@
 
       <div class="footer-top">
 
-        <div class="brand">
-          <span class="brand-name">A OFFORD</span>
-          <span class="brand-sub">Property Services</span>
-        </div>
+        <a class="brand" href="#top">
+          <img
+            src="a-offord-logo.png"
+            alt="A Offord Property Services"
+            class="footer-logo"
+          >
+        </a>
 
         <div class="footer-links">
           <a href="#services">Services</a>
