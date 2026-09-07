@@ -2,13 +2,8 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>A Offord Property Services</title>
 
@@ -17,31 +12,19 @@
     content="A Offord Property Services. Reliable handyman services, fitting, painting, home improvements, garden work and property maintenance."
   >
 
-
   <style>
 
-    /* =========================================================
-       GLOBAL
-    ========================================================= */
-
     :root {
-
       --cream: #f2f0eb;
       --cream-light: #faf9f6;
-
       --dark: #1b1b1b;
       --dark-2: #222222;
-
       --text: #242424;
       --grey: #747474;
-
       --border: #d8d5cf;
       --dark-border: #444444;
 
-      --serif:
-        Georgia,
-        "Times New Roman",
-        serif;
+      --serif: Georgia, "Times New Roman", serif;
 
       --sans:
         -apple-system,
@@ -50,7 +33,6 @@
         Helvetica,
         Arial,
         sans-serif;
-
     }
 
 
@@ -65,26 +47,18 @@
 
 
     body {
-
       margin: 0;
-
       background: var(--cream-light);
       color: var(--text);
-
       font-family: var(--sans);
-
       -webkit-font-smoothing: antialiased;
-
     }
 
 
     img {
-
       display: block;
-
       width: 100%;
       max-width: 100%;
-
     }
 
 
@@ -104,136 +78,94 @@
     h1,
     h2,
     h3 {
-
       font-family: var(--serif);
       font-weight: 400;
-
     }
 
 
     .container {
-
       width: min(calc(100% - 64px), 1280px);
-
-      margin-left: auto;
-      margin-right: auto;
-
+      margin: 0 auto;
     }
 
 
     .eyebrow {
-
       margin-bottom: 20px;
-
       color: #6d6d6d;
-
       font-size: 11px;
       font-weight: 600;
-
       letter-spacing: 0.28em;
-
       text-transform: uppercase;
-
     }
 
 
     .eyebrow::after {
-
       content: "";
-
       display: block;
-
       width: 40px;
       height: 1px;
-
       margin-top: 16px;
-
       background: currentColor;
-
       opacity: 0.55;
-
     }
 
 
     .eyebrow--light {
-      color: #aaaaaa;
+      color: #aaa;
     }
 
 
 
-    /* =========================================================
+    /* =========================================
        HEADER
-    ========================================================= */
+    ========================================= */
 
     .site-header {
-
       background: var(--cream-light);
-
-      border-bottom:
-        1px solid rgba(0, 0, 0, 0.08);
-
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     }
 
 
     .site-header__inner {
-
       min-height: 88px;
 
       display: flex;
-
       align-items: center;
       justify-content: space-between;
 
       gap: 40px;
-
     }
 
 
     .site-logo {
-
       display: block;
-
       width: 205px;
-
     }
 
 
     .site-logo img {
-
       width: 100%;
       height: auto;
-
     }
 
 
     .site-nav {
-
       display: flex;
-
       align-items: center;
-
       gap: 32px;
-
     }
 
 
     .site-nav a {
-
       position: relative;
-
       color: #383838;
-
       font-size: 13px;
-
       text-decoration: none;
-
     }
 
 
     .site-nav a::after {
-
       content: "";
-
       position: absolute;
 
       left: 0;
@@ -245,7 +177,6 @@
       background: #252525;
 
       transition: width 0.2s ease;
-
     }
 
 
@@ -255,15 +186,12 @@
 
 
     .nav-contact {
-
       padding: 11px 17px;
-
       border: 1px solid #252525;
 
       transition:
         background 0.2s ease,
         color 0.2s ease;
-
     }
 
 
@@ -273,20 +201,17 @@
 
 
     .nav-contact:hover {
-
       background: #252525;
       color: white;
-
     }
 
 
 
-    /* =========================================================
+    /* =========================================
        HERO
-    ========================================================= */
+    ========================================= */
 
     .hero {
-
       display: grid;
 
       grid-template-columns:
@@ -296,66 +221,46 @@
       min-height: 510px;
 
       background: var(--cream);
-
     }
 
 
     .hero__content {
-
       display: flex;
-
       flex-direction: column;
       justify-content: center;
 
       padding:
         65px
-        max(
-          40px,
-          calc((100vw - 1280px) / 2)
-        );
+        max(40px, calc((100vw - 1280px) / 2));
 
       padding-right: 65px;
-
     }
 
 
     .hero h1 {
-
       max-width: 630px;
-
       margin-bottom: 23px;
 
-      font-size:
-        clamp(48px, 4.5vw, 70px);
-
+      font-size: clamp(48px, 4.5vw, 70px);
       line-height: 0.99;
-
       letter-spacing: -0.04em;
-
     }
 
 
     .hero__intro {
-
       max-width: 550px;
-
       margin-bottom: 29px;
 
       color: #686868;
 
       font-size: 16px;
-
       line-height: 1.7;
-
     }
 
 
     .hero-link {
-
       display: inline-flex;
-
       align-items: center;
-
       gap: 12px;
 
       width: fit-content;
@@ -365,230 +270,168 @@
       border-bottom: 1px solid #333;
 
       font-size: 14px;
-
       text-decoration: none;
-
     }
 
 
     .hero-link span {
-
-      transition:
-        transform 0.2s ease;
-
+      transition: transform 0.2s ease;
     }
 
 
     .hero-link:hover span {
-
       transform: translateX(4px);
-
     }
 
 
     .hero__image {
-
-      min-height: 510px;
-
+      height: 510px;
       overflow: hidden;
-
     }
 
 
     .hero__image img {
-
       width: 100%;
       height: 100%;
 
       object-fit: cover;
-
+      object-position: center 48%;
     }
 
 
 
-    /* =========================================================
+    /* =========================================
        SERVICES
-    ========================================================= */
+    ========================================= */
 
     .services {
-
       padding-top: 62px;
 
       background: var(--dark);
-
       color: white;
-
     }
 
 
     .services__intro {
-
       margin-bottom: 38px;
-
     }
 
 
     .services__intro h2 {
-
       max-width: 800px;
-
       margin-bottom: 17px;
 
-      font-size:
-        clamp(40px, 3.8vw, 56px);
-
+      font-size: clamp(40px, 3.8vw, 56px);
       line-height: 1.02;
-
       letter-spacing: -0.035em;
-
     }
 
 
     .services__intro > p:last-child {
-
       max-width: 660px;
-
       margin-bottom: 0;
 
       color: #a9a9a9;
 
       font-size: 15px;
-
       line-height: 1.65;
-
     }
 
 
     .services-grid {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
 
       width: min(calc(100% - 32px), 1360px);
-
       margin: 0 auto;
 
-      border-top:
-        1px solid var(--dark-border);
-
-      border-left:
-        1px solid var(--dark-border);
-
+      border-top: 1px solid var(--dark-border);
+      border-left: 1px solid var(--dark-border);
     }
 
 
     .service {
-
       min-height: 285px;
-
       padding: 34px 25px;
 
       display: flex;
-
       flex-direction: column;
-
       align-items: center;
       justify-content: center;
 
       text-align: center;
 
-      border-right:
-        1px solid var(--dark-border);
-
-      border-bottom:
-        1px solid var(--dark-border);
-
+      border-right: 1px solid var(--dark-border);
+      border-bottom: 1px solid var(--dark-border);
     }
 
 
     .service__icon {
-
       width: 48px;
       height: 48px;
 
       margin-bottom: 18px;
 
       color: #ededed;
-
     }
 
 
     .service__icon svg {
-
       width: 100%;
       height: 100%;
 
       fill: none;
-
       stroke: currentColor;
 
       stroke-width: 1.6;
-
       stroke-linecap: round;
       stroke-linejoin: round;
-
     }
 
 
     .service__line {
-
       width: 36px;
       height: 1px;
 
       margin-bottom: 19px;
 
       background: #696969;
-
     }
 
 
     .service h3 {
-
       margin-bottom: 14px;
 
       color: white;
 
-      font-size:
-        clamp(23px, 1.65vw, 28px);
-
+      font-size: clamp(23px, 1.65vw, 28px);
       line-height: 1.08;
-
     }
 
 
     .service p {
-
       max-width: 285px;
-
       margin-bottom: 0;
 
       color: #b7b7b7;
 
       font-size: 13.5px;
-
       line-height: 1.65;
-
     }
 
 
 
-    /* =========================================================
+    /* =========================================
        RECENT WORK
-    ========================================================= */
+    ========================================= */
 
     .work {
-
-      padding: 72px 0;
-
+      padding: 68px 0 62px;
       background: var(--cream-light);
-
     }
 
 
     .section-heading {
-
       display: grid;
 
       grid-template-columns:
@@ -598,124 +441,113 @@
 
       gap: 60px;
 
-      margin-bottom: 38px;
-
+      margin-bottom: 36px;
     }
 
 
     .section-heading h2 {
-
       max-width: 650px;
-
       margin-bottom: 0;
 
-      font-size:
-        clamp(40px, 3.6vw, 55px);
-
+      font-size: clamp(40px, 3.6vw, 55px);
       line-height: 1.02;
-
       letter-spacing: -0.035em;
-
     }
 
 
     .section-heading__copy {
-
       max-width: 490px;
-
       margin-bottom: 3px;
 
       color: #707070;
 
       font-size: 15px;
-
       line-height: 1.7;
-
     }
 
 
     .work-grid {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
 
       gap: 24px;
-
       align-items: start;
-
     }
 
 
     .work-item {
-
       margin: 0;
-
     }
 
 
+    /*
+      BOTH images use exactly the same shape.
+      This fixes the previous height mismatch.
+    */
+
     .work-item__image {
-
       width: 100%;
-
       aspect-ratio: 4 / 3;
 
       overflow: hidden;
 
-      background: #dddddd;
-
+      background: #ddd;
     }
 
 
     .work-item img {
-
       width: 100%;
       height: 100%;
 
       object-fit: cover;
 
-      transition:
-        transform 0.35s ease;
+      transition: transform 0.35s ease;
+    }
 
+
+    /*
+      The original work photo is portrait.
+      This positions the useful area inside the 4:3 crop.
+    */
+
+    .work-item:first-child img {
+      object-position: center 54%;
+    }
+
+
+    /*
+      Media wall stays centrally framed.
+    */
+
+    .work-item:last-child img {
+      object-position: center center;
     }
 
 
     .work-item:hover img {
-
       transform: scale(1.012);
-
     }
 
 
     .work-item figcaption {
-
-      min-height: 88px;
-
       padding-top: 16px;
-
     }
 
 
     .work-item figcaption strong {
-
       display: block;
 
       margin-bottom: 7px;
 
-      color: #444444;
+      color: #444;
 
       font-size: 10.5px;
-
       letter-spacing: 0.18em;
-
       text-transform: uppercase;
-
     }
 
 
     .work-item figcaption p {
-
       margin-bottom: 0;
 
       color: #737373;
@@ -723,102 +555,82 @@
       font-family: var(--serif);
 
       font-size: 20px;
-
       line-height: 1.35;
-
     }
 
 
 
-    /* =========================================================
+    /* =========================================
        ABOUT
-    ========================================================= */
+    ========================================= */
 
     .about {
-
-      padding: 64px 0;
+      padding: 60px 0;
 
       background: var(--cream);
-
     }
 
 
     .about__grid {
-
       display: grid;
 
-      grid-template-columns:
-        180px minmax(0, 1fr);
+      /*
+        Narrow left column stops the massive
+        empty space we were seeing previously.
+      */
 
-      gap: 55px;
+      grid-template-columns:
+        165px minmax(0, 1fr);
+
+      gap: 50px;
 
       align-items: start;
-
     }
 
 
     .about__content {
-
-      max-width: 890px;
-
+      max-width: 900px;
     }
 
 
     .about h2 {
-
       max-width: 800px;
+      margin-bottom: 20px;
 
-      margin-bottom: 21px;
-
-      font-size:
-        clamp(39px, 3.5vw, 52px);
-
+      font-size: clamp(39px, 3.5vw, 52px);
       line-height: 1.04;
-
       letter-spacing: -0.03em;
-
     }
 
 
     .about__content > p {
-
       max-width: 740px;
-
-      margin-bottom: 28px;
+      margin-bottom: 27px;
 
       color: #6c6c6c;
 
       font-size: 15px;
-
       line-height: 1.7;
-
     }
 
 
     .about-points {
-
       display: grid;
 
       grid-template-columns:
         repeat(3, minmax(0, 1fr));
 
-      border-top:
-        1px solid var(--border);
-
+      border-top: 1px solid var(--border);
     }
 
 
     .about-point {
-
       padding-top: 16px;
-
       padding-right: 24px;
-
     }
 
 
     .about-point strong {
-
       display: block;
 
       margin-bottom: 5px;
@@ -826,39 +638,30 @@
       font-family: var(--serif);
 
       font-size: 19px;
-
       font-weight: 400;
-
     }
 
 
     .about-point span {
-
       color: #858585;
-
       font-size: 12px;
-
     }
 
 
 
-    /* =========================================================
+    /* =========================================
        CONTACT
-    ========================================================= */
+    ========================================= */
 
     .contact {
-
-      padding: 58px 0;
+      padding: 56px 0;
 
       background: var(--dark-2);
-
       color: white;
-
     }
 
 
     .contact__inner {
-
       display: grid;
 
       grid-template-columns:
@@ -867,61 +670,45 @@
       align-items: center;
 
       gap: 55px;
-
     }
 
 
     .contact h2 {
-
       max-width: 700px;
-
       margin-bottom: 0;
 
-      font-size:
-        clamp(40px, 3.7vw, 56px);
-
+      font-size: clamp(40px, 3.7vw, 56px);
       line-height: 1.02;
-
       letter-spacing: -0.035em;
-
     }
 
 
     .contact__copy {
-
       max-width: 470px;
-
     }
 
 
     .contact__copy p {
-
       margin-bottom: 19px;
 
       color: #b5b5b5;
 
       font-size: 15px;
-
       line-height: 1.7;
-
     }
 
 
     .contact-actions {
-
       display: flex;
-
       align-items: center;
 
       flex-wrap: wrap;
 
       gap: 17px;
-
     }
 
 
     .contact-button {
-
       display: inline-block;
 
       padding: 12px 18px;
@@ -931,368 +718,254 @@
       color: white;
 
       font-size: 13px;
-
       text-decoration: none;
 
       transition:
         background 0.2s ease,
         color 0.2s ease;
-
     }
 
 
     .contact-button:hover {
-
       background: white;
-      color: #222222;
-
+      color: #222;
     }
 
 
     .contact-phone {
-
-      color: #bbbbbb;
-
+      color: #bbb;
       font-size: 13px;
-
       text-decoration: none;
-
     }
 
 
     .contact-phone:hover {
-
       color: white;
-
     }
 
 
 
-    /* =========================================================
+    /* =========================================
        FOOTER
-    ========================================================= */
+    ========================================= */
 
     .site-footer {
-
       padding: 27px 0;
 
       background: #171717;
-
-      color: #888888;
-
+      color: #888;
     }
 
 
     .site-footer__inner {
-
       display: flex;
 
       align-items: center;
       justify-content: space-between;
 
       gap: 30px;
-
     }
 
 
     .site-footer__logo {
-
       width: 140px;
 
       filter: invert(1);
-
       opacity: 0.85;
-
     }
 
 
     .site-footer p {
-
       margin: 0;
-
       font-size: 11px;
-
     }
 
 
 
-    /* =========================================================
+    /* =========================================
        TABLET
-    ========================================================= */
+    ========================================= */
 
     @media (max-width: 1000px) {
 
       .container {
-
-        width:
-          calc(100% - 48px);
-
+        width: calc(100% - 48px);
       }
 
 
       .hero {
-
-        grid-template-columns:
-          1fr 1fr;
-
+        grid-template-columns: 1fr 1fr;
       }
 
 
       .hero__content {
-
         padding: 55px 40px;
-
       }
 
 
       .services-grid {
-
-        grid-template-columns:
-          repeat(2, 1fr);
-
+        grid-template-columns: repeat(2, 1fr);
       }
 
 
       .section-heading {
-
         grid-template-columns: 1fr;
-
         gap: 20px;
-
       }
 
 
       .about__grid {
-
-        grid-template-columns:
-          140px 1fr;
-
-        gap: 40px;
-
+        grid-template-columns: 130px 1fr;
+        gap: 35px;
       }
 
 
       .contact__inner {
-
-        grid-template-columns:
-          1fr;
-
+        grid-template-columns: 1fr;
         gap: 28px;
-
       }
 
     }
 
 
 
-    /* =========================================================
+    /* =========================================
        MOBILE
-    ========================================================= */
+    ========================================= */
 
     @media (max-width: 720px) {
 
       .container {
-
-        width:
-          calc(100% - 38px);
-
+        width: calc(100% - 38px);
       }
 
 
       .site-header__inner {
-
         min-height: 80px;
-
       }
 
 
       .site-logo {
-
         width: 170px;
-
       }
 
 
       .site-nav {
-
         display: none;
-
       }
 
 
       .hero {
-
-        grid-template-columns:
-          1fr;
-
+        grid-template-columns: 1fr;
       }
 
 
       .hero__content {
-
-        padding:
-          50px 20px 45px;
-
+        padding: 50px 20px 45px;
       }
 
 
       .hero h1 {
-
         font-size: 46px;
-
       }
 
 
       .hero__image {
-
+        height: 315px;
         min-height: 315px;
-
       }
 
 
       .services {
-
         padding-top: 50px;
-
       }
 
 
       .services__intro {
-
         margin-bottom: 32px;
-
       }
 
 
       .services__intro h2 {
-
         font-size: 38px;
-
       }
 
 
       .services-grid {
-
-        grid-template-columns:
-          1fr;
-
-        width:
-          calc(100% - 20px);
-
+        grid-template-columns: 1fr;
+        width: calc(100% - 20px);
       }
 
 
       .service {
-
         min-height: 255px;
-
         padding: 32px 22px;
-
       }
 
 
       .work {
-
         padding: 55px 0;
-
       }
 
 
       .section-heading {
-
         margin-bottom: 32px;
-
       }
 
 
       .section-heading h2 {
-
         font-size: 39px;
-
       }
 
 
       .work-grid {
-
-        grid-template-columns:
-          1fr;
-
+        grid-template-columns: 1fr;
         gap: 38px;
-
-      }
-
-
-      .work-item figcaption {
-
-        min-height: auto;
-
       }
 
 
       .about {
-
         padding: 52px 0;
-
       }
 
 
       .about__grid {
-
-        grid-template-columns:
-          1fr;
-
+        grid-template-columns: 1fr;
         gap: 20px;
-
       }
 
 
       .about h2 {
-
         font-size: 38px;
-
       }
 
 
       .about-points {
-
-        grid-template-columns:
-          1fr;
-
+        grid-template-columns: 1fr;
       }
 
 
       .about-point {
-
         padding: 14px 0;
-
-        border-bottom:
-          1px solid var(--border);
-
+        border-bottom: 1px solid var(--border);
       }
 
 
       .contact {
-
         padding: 50px 0;
-
       }
 
 
       .contact h2 {
-
         font-size: 40px;
-
       }
 
 
       .site-footer__inner {
-
         flex-direction: column;
-
         align-items: flex-start;
 
         gap: 18px;
-
       }
 
     }
@@ -1302,18 +975,16 @@
 </head>
 
 
-
 <body>
 
 
-  <!-- =====================================================
+  <!-- =========================================
        HEADER
-  ====================================================== -->
+  ========================================== -->
 
   <header class="site-header">
 
     <div class="container site-header__inner">
-
 
       <a
         href="#"
@@ -1327,7 +998,6 @@
         >
 
       </a>
-
 
 
       <nav
@@ -1356,7 +1026,6 @@
 
       </nav>
 
-
     </div>
 
   </header>
@@ -1366,15 +1035,13 @@
   <main>
 
 
-    <!-- =====================================================
+    <!-- =========================================
          HERO
-    ====================================================== -->
+    ========================================== -->
 
     <section class="hero">
 
-
       <div class="hero__content">
-
 
         <p class="eyebrow">
           A OFFORD PROPERTY SERVICES
@@ -1408,37 +1075,32 @@
 
         </a>
 
-
       </div>
-
 
 
       <div class="hero__image">
 
         <img
-          src="images/a-offord-hero-property.jpg"
+          src="images/property-exterior.png"
           alt="Residential property worked on by A Offord Property Services"
         >
 
       </div>
 
-
     </section>
 
 
 
-    <!-- =====================================================
+    <!-- =========================================
          SERVICES
-    ====================================================== -->
+    ========================================== -->
 
     <section
       class="services"
       id="services"
     >
 
-
       <div class="container services__intro">
-
 
         <p class="eyebrow eyebrow--light">
           SERVICES
@@ -1458,7 +1120,6 @@
 
         </p>
 
-
       </div>
 
 
@@ -1470,7 +1131,6 @@
 
         <article class="service">
 
-
           <div
             class="service__icon"
             aria-hidden="true"
@@ -1479,8 +1139,11 @@
             <svg viewBox="0 0 64 64">
 
               <path d="M15 14H36V23H25"></path>
+
               <path d="M25 23L47 45"></path>
+
               <path d="M47 45L41 51"></path>
+
               <path d="M41 51L19 29"></path>
 
             </svg>
@@ -1503,15 +1166,13 @@
 
           </p>
 
-
         </article>
 
 
 
-        <!-- FITTING & INSTALLATION -->
+        <!-- FITTING -->
 
         <article class="service">
-
 
           <div
             class="service__icon"
@@ -1521,9 +1182,11 @@
             <svg viewBox="0 0 64 64">
 
               <path d="M13 17H51"></path>
+
               <path d="M13 22H51"></path>
 
               <path d="M20 22V31H27"></path>
+
               <path d="M44 22V31H37"></path>
 
               <path d="M25 40H42L47 44H42V49H29V45H25Z"></path>
@@ -1550,7 +1213,6 @@
 
           </p>
 
-
         </article>
 
 
@@ -1558,7 +1220,6 @@
         <!-- PAINTING -->
 
         <article class="service">
-
 
           <div
             class="service__icon"
@@ -1607,7 +1268,6 @@
 
           </p>
 
-
         </article>
 
 
@@ -1615,7 +1275,6 @@
         <!-- OUTDOOR -->
 
         <article class="service">
-
 
           <div
             class="service__icon"
@@ -1666,35 +1325,30 @@
 
           </p>
 
-
         </article>
 
 
       </div>
 
-
     </section>
 
 
 
-    <!-- =====================================================
+    <!-- =========================================
          RECENT WORK
-    ====================================================== -->
+    ========================================== -->
 
     <section
       class="work"
       id="work"
     >
 
-
       <div class="container">
 
 
         <div class="section-heading">
 
-
           <div>
-
 
             <p class="eyebrow">
               RECENT WORK
@@ -1706,9 +1360,7 @@
               Properly finished.
             </h2>
 
-
           </div>
-
 
 
           <p class="section-heading__copy">
@@ -1719,7 +1371,6 @@
 
           </p>
 
-
         </div>
 
 
@@ -1729,11 +1380,10 @@
 
           <figure class="work-item">
 
-
             <div class="work-item__image">
 
               <img
-                src="images/a-offord-work-installation.jpg"
+                src="images/property-work.png"
                 alt="Installation and fitting work in progress"
                 loading="lazy"
               >
@@ -1753,18 +1403,16 @@
 
             </figcaption>
 
-
           </figure>
 
 
 
           <figure class="work-item">
 
-
             <div class="work-item__image">
 
               <img
-                src="images/a-offord-work-media-wall.jpg"
+                src="images/media-wall.png"
                 alt="Floating shelving and television installation"
                 loading="lazy"
               >
@@ -1784,29 +1432,25 @@
 
             </figcaption>
 
-
           </figure>
 
 
         </div>
 
-
       </div>
-
 
     </section>
 
 
 
-    <!-- =====================================================
+    <!-- =========================================
          ABOUT
-    ====================================================== -->
+    ========================================== -->
 
     <section
       class="about"
       id="about"
     >
-
 
       <div class="container about__grid">
 
@@ -1818,7 +1462,6 @@
           </p>
 
         </div>
-
 
 
         <div class="about__content">
@@ -1839,7 +1482,6 @@
           </p>
 
 
-
           <div class="about-points">
 
 
@@ -1856,7 +1498,6 @@
             </div>
 
 
-
             <div class="about-point">
 
               <strong>
@@ -1868,7 +1509,6 @@
               </span>
 
             </div>
-
 
 
             <div class="about-point">
@@ -1886,32 +1526,27 @@
 
           </div>
 
-
         </div>
 
-
       </div>
-
 
     </section>
 
 
 
-    <!-- =====================================================
+    <!-- =========================================
          CONTACT
-    ====================================================== -->
+    ========================================== -->
 
     <section
       class="contact"
       id="contact"
     >
 
-
       <div class="container contact__inner">
 
 
         <div>
-
 
           <p class="eyebrow eyebrow--light">
             GET IN TOUCH
@@ -1922,13 +1557,10 @@
             Got a job that needs doing?
           </h2>
 
-
         </div>
 
 
-
         <div class="contact__copy">
-
 
           <p>
 
@@ -1938,9 +1570,7 @@
           </p>
 
 
-
           <div class="contact-actions">
-
 
             <a
               href="mailto:andy@ao-property-services.com"
@@ -1957,15 +1587,11 @@
               07506 824981
             </a>
 
-
           </div>
-
 
         </div>
 
-
       </div>
-
 
     </section>
 
@@ -1974,12 +1600,11 @@
 
 
 
-  <!-- =====================================================
+  <!-- =========================================
        FOOTER
-  ====================================================== -->
+  ========================================== -->
 
   <footer class="site-footer">
-
 
     <div class="container site-footer__inner">
 
@@ -1995,9 +1620,7 @@
         © 2026 A Offord Property Services
       </p>
 
-
     </div>
-
 
   </footer>
 
