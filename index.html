@@ -3,62 +3,841 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BingoBango Test Site</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-    }
 
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
+  <title>A Offord Property Services | Hertfordshire</title>
+
+  <meta
+    name="description"
+    content="Premium residential property maintenance, improvements and finishing services across Hertfordshire and surrounding areas."
+  >
+
+  <style>
+    * {
       box-sizing: border-box;
     }
 
-    .hero-content {
-      max-width: 800px;
+    html {
+      scroll-behavior: smooth;
     }
 
-    h1 {
-      font-size: 56px;
-      margin-bottom: 20px;
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f6f2;
+      color: #1b1b1b;
     }
 
-    p {
-      font-size: 22px;
-      line-height: 1.5;
-      color: #555;
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* Header */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(247, 246, 242, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .header-inner {
+      min-height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .brand-name {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      letter-spacing: 0.18em;
+    }
+
+    .brand-sub {
+      margin-top: 8px;
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 14px;
+    }
+
+    .nav a {
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      opacity: 0.6;
     }
 
     .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 24px;
-      background: #111;
-      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 24px;
+      border: 1px solid #1b1b1b;
       text-decoration: none;
-      border-radius: 8px;
+      font-size: 14px;
+      transition: 0.2s ease;
+    }
+
+    .button-dark {
+      background: #1b1b1b;
+      color: #fff;
+    }
+
+    .button-dark:hover {
+      background: #343434;
+    }
+
+    .button-light:hover {
+      background: #1b1b1b;
+      color: #fff;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 760px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(15, 15, 15, 0.72) 0%,
+          rgba(15, 15, 15, 0.52) 42%,
+          rgba(15, 15, 15, 0.14) 75%
+        ),
+        url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=85")
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 720px;
+      color: #fff;
+      padding: 100px 0;
+    }
+
+    .eyebrow {
+      margin: 0 0 22px;
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: clamp(48px, 7vw, 84px);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-text {
+      max-width: 610px;
+      margin: 28px 0 0;
+      font-size: 19px;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .hero .button-light {
+      border-color: #fff;
+      color: #fff;
+    }
+
+    .hero .button-light:hover {
+      background: #fff;
+      color: #1b1b1b;
+    }
+
+    /* Intro */
+
+    .intro {
+      padding: 110px 0;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .section-kicker {
+      margin: 0;
+      font-size: 12px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #777;
+    }
+
+    .intro h2,
+    .services h2,
+    .projects h2,
+    .why h2,
+    .contact h2 {
+      margin: 18px 0 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: clamp(38px, 5vw, 58px);
+      line-height: 1.05;
+    }
+
+    .intro-copy {
+      font-size: 19px;
+      line-height: 1.8;
+      color: #4a4a4a;
+    }
+
+    .intro-copy p:first-child {
+      margin-top: 0;
+    }
+
+    /* Services */
+
+    .services {
+      padding: 110px 0;
+      background: #1b1b1b;
+      color: #fff;
+    }
+
+    .services-heading {
+      max-width: 700px;
+    }
+
+    .services .section-kicker {
+      color: rgba(255,255,255,0.55);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 60px;
+      border-top: 1px solid rgba(255,255,255,0.18);
+      border-left: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .service-card {
+      min-height: 300px;
+      padding: 34px;
+      border-right: 1px solid rgba(255,255,255,0.18);
+      border-bottom: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .service-number {
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+    }
+
+    .service-card h3 {
+      margin: 75px 0 16px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    .service-card p {
+      margin: 0;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.68);
+    }
+
+    /* Why */
+
+    .why {
+      padding: 110px 0;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 90px;
+      align-items: center;
+    }
+
+    .why-image {
+      min-height: 620px;
+      background:
+        url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85")
+        center/cover no-repeat;
+    }
+
+    .why-list {
+      margin-top: 38px;
+      border-top: 1px solid #d8d5ce;
+    }
+
+    .why-item {
+      padding: 24px 0;
+      border-bottom: 1px solid #d8d5ce;
+    }
+
+    .why-item h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .why-item p {
+      margin: 0;
+      color: #666;
+      line-height: 1.65;
+    }
+
+    /* Projects */
+
+    .projects {
+      padding: 110px 0;
+      background: #ece9e2;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 24px;
+      margin-top: 55px;
+    }
+
+    .project {
+      min-height: 560px;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .project-one {
+      background-image:
+        linear-gradient(
+          180deg,
+          transparent 55%,
+          rgba(0,0,0,0.62) 100%
+        ),
+        url("https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=1600&q=85");
+    }
+
+    .project-two {
+      background-image:
+        linear-gradient(
+          180deg,
+          transparent 55%,
+          rgba(0,0,0,0.62) 100%
+        ),
+        url("https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1200&q=85");
+    }
+
+    .project-label {
+      position: absolute;
+      left: 30px;
+      bottom: 28px;
+      color: #fff;
+    }
+
+    .project-label strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      font-weight: 400;
+    }
+
+    .project-label span {
+      display: block;
+      margin-top: 8px;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    /* Testimonial */
+
+    .testimonial {
+      padding: 110px 0;
+      text-align: center;
+    }
+
+    .testimonial blockquote {
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(32px, 4vw, 50px);
+      line-height: 1.25;
+      font-weight: 400;
+    }
+
+    .testimonial cite {
+      display: block;
+      margin-top: 28px;
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-style: normal;
+      color: #777;
+    }
+
+    /* Contact */
+
+    .contact {
+      padding: 110px 0;
+      background: #d7d2c7;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .contact p {
+      max-width: 560px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #4d4b47;
+    }
+
+    .contact-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    /* Footer */
+
+    .site-footer {
+      background: #111;
+      color: #fff;
+      padding: 55px 0 34px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .footer-bottom {
+      margin-top: 45px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* Mobile */
+
+    @media (max-width: 900px) {
+      .nav a:not(.button) {
+        display: none;
+      }
+
+      .header-inner {
+        min-height: 78px;
+      }
+
+      .hero {
+        min-height: 680px;
+      }
+
+      .intro-grid,
+      .why-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project {
+        min-height: 480px;
+      }
+
+      .why-image {
+        min-height: 480px;
+      }
+
+      .contact-actions {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .brand-name {
+        font-size: 20px;
+      }
+
+      .brand-sub {
+        font-size: 8px;
+      }
+
+      .nav .button {
+        padding: 0 16px;
+      }
+
+      .hero-content {
+        padding: 80px 0;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero-text {
+        font-size: 17px;
+      }
+
+      .intro,
+      .services,
+      .why,
+      .projects,
+      .testimonial,
+      .contact {
+        padding: 80px 0;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        min-height: auto;
+      }
+
+      .service-card h3 {
+        margin-top: 48px;
+      }
+
+      .footer-top {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>My First Proper Website</h1>
-      <p>
-        This website is hosted completely free using GitHub Pages.
-      </p>
-      <a class="button" href="#">Get in touch</a>
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="#top">
+        <span class="brand-name">A OFFORD</span>
+        <span class="brand-sub">Property Services</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="button button-dark">Get a Quote</a>
+      </nav>
+
     </div>
-  </section>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="container">
+
+        <div class="hero-content">
+          <p class="eyebrow">Property Services · Hertfordshire</p>
+
+          <h1>
+            Property improvements, finished properly.
+          </h1>
+
+          <p class="hero-text">
+            Reliable residential property maintenance, repairs and improvement
+            work delivered with care, attention to detail and a professional finish.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="button button-dark">Get a Quote</a>
+            <a href="#services" class="button button-light">View Services</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="intro" id="about">
+      <div class="container intro-grid">
+
+        <div>
+          <p class="section-kicker">A Offord Property Services</p>
+          <h2>
+            Dependable property work without the usual hassle.
+          </h2>
+        </div>
+
+        <div class="intro-copy">
+          <p>
+            From smaller repairs and decorating through to wider property improvements,
+            A Offord Property Services provides a straightforward, high-quality service
+            for homeowners who care about how the finished job looks.
+          </p>
+
+          <p>
+            Clear communication, tidy workmanship and attention to the final details
+            are at the centre of every project.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="services-heading">
+          <p class="section-kicker">Services</p>
+          <h2>Practical expertise across your property.</h2>
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Property Maintenance</h3>
+            <p>
+              Reliable maintenance and repair work to keep your home looking and
+              functioning as it should.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Decorating & Finishing</h3>
+            <p>
+              Careful preparation and finishing work for clean, considered interiors.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Repairs & Improvements</h3>
+            <p>
+              From everyday repairs to upgrades that improve the look and usability
+              of your property.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <h3>General Property Works</h3>
+            <p>
+              Versatile support for those awkward jobs that often require more than
+              one trade or skill.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container why-grid">
+
+        <div class="why-image"></div>
+
+        <div>
+          <p class="section-kicker">Why A Offord</p>
+          <h2>A better standard of property service.</h2>
+
+          <div class="why-list">
+
+            <div class="why-item">
+              <h3>Careful workmanship</h3>
+              <p>
+                Work carried out with attention to finish, detail and the surrounding property.
+              </p>
+            </div>
+
+            <div class="why-item">
+              <h3>Clear communication</h3>
+              <p>
+                Straightforward advice, realistic expectations and no unnecessary confusion.
+              </p>
+            </div>
+
+            <div class="why-item">
+              <h3>Respect for your home</h3>
+              <p>
+                A tidy and considerate approach throughout the job, not just at the end.
+              </p>
+            </div>
+
+            <div class="why-item">
+              <h3>One point of contact</h3>
+              <p>
+                A simple way to manage a range of maintenance and improvement work.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+
+        <p class="section-kicker">Recent Work</p>
+        <h2>Considered improvements, beautifully finished.</h2>
+
+        <div class="project-grid">
+
+          <div class="project project-one">
+            <div class="project-label">
+              <strong>Interior Improvements</strong>
+              <span>Residential Property</span>
+            </div>
+          </div>
+
+          <div class="project project-two">
+            <div class="project-label">
+              <strong>Finishing & Decoration</strong>
+              <span>Residential Property</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="container">
+
+        <blockquote>
+          “Professional, reliable and genuinely takes pride in the finished result.”
+        </blockquote>
+
+        <cite>Example customer testimonial</cite>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+
+        <div>
+          <p class="section-kicker">Start a Project</p>
+          <h2>Have a property job in mind?</h2>
+          <p>
+            Tell us a little about the work you need and we can discuss the next step.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a
+            href="mailto:hello@example.com"
+            class="button button-dark"
+          >
+            Email A Offord
+          </a>
+
+          <a
+            href="tel:07000000000"
+            class="button button-light"
+          >
+            Call 07000 000000
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="brand">
+          <span class="brand-name">A OFFORD</span>
+          <span class="brand-sub">Property Services</span>
+        </div>
+
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Privacy</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 A Offord Property Services. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
 
 </body>
 </html>
