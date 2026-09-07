@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>A Offord Property Services</title>
 
   <meta
     name="description"
-    content="A Offord Property Services. Reliable help with property maintenance, handyman work, decorating, repairs and improvements."
+    content="A Offord Property Services. Reliable handyman services, fitting, painting, home improvements, garden work and property maintenance."
   >
+
 
   <style>
 
@@ -18,13 +25,18 @@
     ========================================================= */
 
     :root {
+
       --cream: #f3f1ec;
       --cream-light: #faf9f6;
+
       --dark: #1b1b1b;
-      --dark-soft: #202020;
+      --dark-soft: #232323;
+
       --text: #242424;
-      --grey: #767676;
+
+      --grey: #717171;
       --light-grey: #b9b9b9;
+
       --border: #d8d5cf;
       --dark-border: #444444;
 
@@ -40,32 +52,46 @@
         Helvetica,
         Arial,
         sans-serif;
+
     }
+
 
     * {
       box-sizing: border-box;
     }
 
+
     html {
       scroll-behavior: smooth;
     }
 
+
     body {
+
       margin: 0;
+
       background: var(--cream-light);
       color: var(--text);
+
       font-family: var(--sans);
+
       -webkit-font-smoothing: antialiased;
+
     }
 
+
     img {
+
       display: block;
       max-width: 100%;
+
     }
+
 
     a {
       color: inherit;
     }
+
 
     h1,
     h2,
@@ -74,45 +100,62 @@
       margin-top: 0;
     }
 
+
     h1,
     h2,
     h3 {
+
       font-family: var(--serif);
       font-weight: 400;
+
     }
+
 
     .container {
+
       width: min(calc(100% - 80px), 1500px);
       margin: 0 auto;
+
     }
 
+
     .eyebrow {
-      margin-bottom: 24px;
+
+      margin-bottom: 21px;
 
       color: #6d6d6d;
 
       font-size: 11px;
       font-weight: 600;
+
       letter-spacing: 0.28em;
       text-transform: uppercase;
+
     }
 
+
     .eyebrow::after {
+
       content: "";
+
       display: block;
 
       width: 42px;
       height: 1px;
 
-      margin-top: 18px;
+      margin-top: 17px;
 
       background: currentColor;
+
       opacity: 0.55;
+
     }
+
 
     .eyebrow--light {
       color: #a9a9a9;
     }
+
 
 
     /* =========================================================
@@ -120,49 +163,74 @@
     ========================================================= */
 
     .site-header {
+
       background: var(--cream-light);
-      border-bottom: 1px solid rgba(0,0,0,0.08);
+
+      border-bottom:
+        1px solid rgba(0, 0, 0, 0.08);
+
     }
 
+
     .site-header__inner {
-      min-height: 112px;
+
+      min-height: 96px;
 
       display: flex;
       align-items: center;
       justify-content: space-between;
 
       gap: 40px;
+
     }
+
 
     .site-logo {
-      width: 240px;
+
       display: block;
+
+      width: 220px;
+
     }
+
 
     .site-logo img {
+
       width: 100%;
       height: auto;
+
     }
+
 
     .site-nav {
+
       display: flex;
       align-items: center;
-      gap: 38px;
+
+      gap: 34px;
+
     }
 
+
     .site-nav a {
+
       position: relative;
 
       color: #383838;
 
       font-size: 13px;
+
       text-decoration: none;
+
     }
 
+
     .site-nav a::after {
+
       content: "";
 
       position: absolute;
+
       left: 0;
       bottom: -7px;
 
@@ -172,30 +240,40 @@
       background: #252525;
 
       transition: width 0.2s ease;
+
     }
+
 
     .site-nav a:hover::after {
       width: 100%;
     }
 
+
     .nav-contact {
-      padding: 13px 19px;
+
+      padding: 12px 18px;
 
       border: 1px solid #252525;
 
       transition:
         background 0.2s ease,
         color 0.2s ease;
+
     }
+
 
     .nav-contact::after {
       display: none;
     }
 
+
     .nav-contact:hover {
+
       background: #252525;
       color: white;
+
     }
+
 
 
     /* =========================================================
@@ -203,52 +281,73 @@
     ========================================================= */
 
     .hero {
-      display: grid;
-      grid-template-columns: 0.92fr 1.08fr;
 
-      min-height: 650px;
+      display: grid;
+
+      grid-template-columns:
+        0.92fr 1.08fr;
+
+      min-height: 560px;
 
       background: var(--cream);
+
     }
 
+
     .hero__content {
+
       display: flex;
       flex-direction: column;
       justify-content: center;
 
       padding:
-        90px
+        70px
         max(60px, calc((100vw - 1500px) / 2));
 
-      padding-right: 75px;
+      padding-right: 70px;
+
     }
 
-    .hero h1 {
-      max-width: 700px;
 
-      margin-bottom: 30px;
+    .hero h1 {
+
+      max-width: 680px;
+
+      margin-bottom: 25px;
 
       color: #202020;
 
-      font-size: clamp(54px, 5.2vw, 82px);
-      line-height: 0.98;
+      font-size:
+        clamp(50px, 4.7vw, 74px);
+
+      line-height: 0.99;
+
       letter-spacing: -0.04em;
+
     }
 
+
     .hero__intro {
+
       max-width: 570px;
 
-      margin-bottom: 36px;
+      margin-bottom: 31px;
 
       color: #696969;
 
-      font-size: 18px;
-      line-height: 1.7;
+      font-size: 17px;
+
+      line-height: 1.65;
+
     }
 
+
     .hero-link {
+
       display: inline-flex;
+
       align-items: center;
+
       gap: 13px;
 
       width: fit-content;
@@ -260,30 +359,45 @@
       color: #262626;
 
       font-size: 14px;
+
       text-decoration: none;
+
     }
 
+
     .hero-link span {
-      transition: transform 0.2s ease;
+
+      transition:
+        transform 0.2s ease;
+
     }
+
 
     .hero-link:hover span {
       transform: translateX(4px);
     }
 
+
     .hero__image {
+
+      min-height: 560px;
+
       overflow: hidden;
 
-      min-height: 650px;
     }
 
+
     .hero__image img {
+
       width: 100%;
       height: 100%;
 
       object-fit: cover;
+
       object-position: center;
+
     }
+
 
 
     /* =========================================================
@@ -291,115 +405,170 @@
     ========================================================= */
 
     .services {
-      padding-top: 105px;
+
+      padding-top: 72px;
 
       background: var(--dark);
+
       color: white;
+
     }
+
 
     .services__intro {
-      margin-bottom: 70px;
+
+      margin-bottom: 44px;
+
     }
+
 
     .services__intro h2 {
-      max-width: 930px;
 
-      margin-bottom: 24px;
+      max-width: 840px;
 
-      font-size: clamp(48px, 5vw, 76px);
+      margin-bottom: 18px;
+
+      font-size:
+        clamp(42px, 4vw, 62px);
+
       line-height: 1.02;
+
       letter-spacing: -0.035em;
+
     }
 
+
     .services__intro > p:last-child {
-      max-width: 620px;
+
+      max-width: 650px;
 
       margin-bottom: 0;
 
       color: #aaa;
 
-      font-size: 16px;
-      line-height: 1.75;
+      font-size: 15px;
+
+      line-height: 1.65;
+
     }
+
 
     .services-grid {
+
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+
+      grid-template-columns:
+        repeat(4, 1fr);
 
       width: calc(100% - 32px);
+
       margin: 0 auto;
 
-      border-top: 1px solid var(--dark-border);
-      border-left: 1px solid var(--dark-border);
+      border-top:
+        1px solid var(--dark-border);
+
+      border-left:
+        1px solid var(--dark-border);
+
     }
 
-    .service {
-      min-height: 405px;
 
-      padding: 54px 38px;
+    .service {
+
+      min-height: 310px;
+
+      padding: 38px 28px;
 
       display: flex;
+
       flex-direction: column;
+
       align-items: center;
       justify-content: center;
 
-      border-right: 1px solid var(--dark-border);
-      border-bottom: 1px solid var(--dark-border);
+      border-right:
+        1px solid var(--dark-border);
+
+      border-bottom:
+        1px solid var(--dark-border);
 
       text-align: center;
+
     }
+
 
     .service__icon {
-      width: 64px;
-      height: 64px;
 
-      margin-bottom: 27px;
+      width: 50px;
+      height: 50px;
 
-      color: #f0f0f0;
+      margin-bottom: 20px;
+
+      color: #eeeeee;
+
     }
 
+
     .service__icon svg {
+
       width: 100%;
       height: 100%;
 
       fill: none;
 
       stroke: currentColor;
+
       stroke-width: 1.5;
+
       stroke-linecap: round;
+
       stroke-linejoin: round;
+
     }
 
+
     .service__line {
+
       width: 38px;
       height: 1px;
 
-      margin-bottom: 26px;
+      margin-bottom: 20px;
 
       background: #6f6f6f;
+
     }
 
+
     .service h3 {
+
       max-width: 300px;
 
-      margin-bottom: 21px;
+      margin-bottom: 15px;
 
       color: white;
 
-      font-size: clamp(26px, 2vw, 33px);
-      line-height: 1.1;
+      font-size:
+        clamp(24px, 1.7vw, 30px);
+
+      line-height: 1.08;
+
     }
 
+
     .service p {
-      max-width: 300px;
+
+      max-width: 305px;
 
       margin-bottom: 0;
 
       color: #b8b8b8;
 
-      font-size: 15px;
-      line-height: 1.75;
+      font-size: 14px;
+
+      line-height: 1.65;
+
     }
+
 
 
     /* =========================================================
@@ -407,160 +576,242 @@
     ========================================================= */
 
     .work {
-      padding: 120px 0;
+
+      padding: 80px 0;
 
       background: var(--cream-light);
+
     }
 
+
     .section-heading {
+
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+
+      grid-template-columns:
+        1.05fr 0.95fr;
 
       align-items: end;
 
-      gap: 80px;
+      gap: 65px;
 
-      margin-bottom: 68px;
+      margin-bottom: 45px;
+
     }
 
+
     .section-heading h2 {
-      max-width: 760px;
+
+      max-width: 720px;
 
       margin-bottom: 0;
 
-      font-size: clamp(48px, 4.7vw, 72px);
+      font-size:
+        clamp(42px, 4vw, 60px);
+
       line-height: 1.02;
+
       letter-spacing: -0.035em;
+
     }
 
-    .section-heading__copy {
-      max-width: 530px;
 
-      margin-bottom: 5px;
+    .section-heading__copy {
+
+      max-width: 520px;
+
+      margin-bottom: 4px;
 
       color: #717171;
 
-      font-size: 16px;
-      line-height: 1.75;
+      font-size: 15px;
+
+      line-height: 1.7;
+
     }
+
 
     .work-grid {
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
 
-      gap: 25px;
+      display: grid;
+
+      grid-template-columns:
+        1.08fr 0.92fr;
+
+      gap: 24px;
+
     }
+
 
     .work-item {
       margin: 0;
     }
 
+
     .work-item__image {
+
       overflow: hidden;
 
       background: #ddd;
+
     }
 
-    .work-item--portrait .work-item__image {
-      aspect-ratio: 4 / 5;
+
+    .work-item--portrait
+    .work-item__image {
+
+      aspect-ratio: 4 / 4.6;
+
     }
 
-    .work-item--landscape .work-item__image {
+
+    .work-item--landscape
+    .work-item__image {
+
       aspect-ratio: 4 / 3;
+
     }
+
 
     .work-item img {
+
       width: 100%;
       height: 100%;
 
       object-fit: cover;
 
-      transition: transform 0.45s ease;
+      transition:
+        transform 0.45s ease;
+
     }
+
 
     .work-item:hover img {
+
       transform: scale(1.015);
+
     }
+
 
     .work-item figcaption {
-      padding-top: 19px;
+
+      padding-top: 17px;
+
     }
 
+
     .work-item figcaption strong {
+
       display: block;
 
-      margin-bottom: 7px;
+      margin-bottom: 6px;
 
       color: #444;
 
       font-size: 11px;
+
       letter-spacing: 0.18em;
+
       text-transform: uppercase;
+
     }
 
+
     .work-item figcaption p {
+
       margin-bottom: 0;
 
       color: #747474;
 
       font-family: var(--serif);
-      font-size: 23px;
+
+      font-size: 21px;
+
       line-height: 1.35;
+
     }
+
 
 
     /* =========================================================
-       PROPERTY IMAGE BAND
+       PROPERTY FEATURE
     ========================================================= */
 
     .property-feature {
+
       display: grid;
-      grid-template-columns: 1fr 1fr;
+
+      grid-template-columns:
+        1fr 1fr;
 
       background: var(--cream);
+
     }
+
 
     .property-feature__image {
-      min-height: 600px;
+
+      min-height: 440px;
 
       overflow: hidden;
+
     }
 
+
     .property-feature__image img {
+
       width: 100%;
       height: 100%;
 
       object-fit: cover;
+
     }
+
 
     .property-feature__content {
-      padding: 90px;
+
+      padding: 62px;
 
       display: flex;
+
       flex-direction: column;
+
       justify-content: center;
+
     }
+
 
     .property-feature h2 {
-      max-width: 650px;
 
-      margin-bottom: 28px;
+      max-width: 620px;
 
-      font-size: clamp(44px, 4vw, 64px);
+      margin-bottom: 23px;
+
+      font-size:
+        clamp(40px, 3.5vw, 54px);
+
       line-height: 1.04;
+
       letter-spacing: -0.03em;
+
     }
 
-    .property-feature__content > p:last-child {
-      max-width: 600px;
+
+    .property-feature__content
+    > p:last-child {
+
+      max-width: 590px;
 
       margin-bottom: 0;
 
       color: #6e6e6e;
 
-      font-size: 16px;
-      line-height: 1.8;
+      font-size: 15px;
+
+      line-height: 1.75;
+
     }
+
 
 
     /* =========================================================
@@ -568,68 +819,109 @@
     ========================================================= */
 
     .about {
-      padding: 115px 0;
+
+      padding: 68px 0;
 
       background: var(--cream-light);
+
     }
+
 
     .about__grid {
-      display: grid;
-      grid-template-columns: 0.7fr 1.3fr;
 
-      gap: 80px;
+      display: grid;
+
+      grid-template-columns:
+        0.65fr 1.35fr;
+
+      gap: 55px;
+
     }
+
 
     .about__content {
+
       max-width: 850px;
+
     }
+
 
     .about h2 {
-      margin-bottom: 30px;
 
-      font-size: clamp(46px, 4vw, 66px);
+      max-width: 820px;
+
+      margin-bottom: 22px;
+
+      font-size:
+        clamp(40px, 3.7vw, 56px);
+
       line-height: 1.04;
+
       letter-spacing: -0.03em;
+
     }
 
+
     .about__content > p {
+
       max-width: 720px;
 
-      margin-bottom: 52px;
+      margin-bottom: 32px;
 
       color: #6c6c6c;
 
-      font-size: 17px;
-      line-height: 1.8;
+      font-size: 15px;
+
+      line-height: 1.7;
+
     }
+
 
     .about-points {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
 
-      border-top: 1px solid var(--border);
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      border-top:
+        1px solid var(--border);
+
     }
+
 
     .about-point {
-      padding-top: 23px;
-      padding-right: 25px;
+
+      padding-top: 17px;
+
+      padding-right: 24px;
+
     }
+
 
     .about-point strong {
+
       display: block;
 
-      margin-bottom: 7px;
+      margin-bottom: 6px;
 
       font-family: var(--serif);
-      font-size: 22px;
+
+      font-size: 20px;
+
       font-weight: 400;
+
     }
+
 
     .about-point span {
+
       color: #858585;
 
-      font-size: 13px;
+      font-size: 12px;
+
     }
+
 
 
     /* =========================================================
@@ -637,65 +929,126 @@
     ========================================================= */
 
     .contact {
-      padding: 110px 0;
+
+      padding: 64px 0;
 
       background: #242424;
+
       color: white;
+
     }
+
 
     .contact__inner {
+
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
 
-      align-items: end;
+      grid-template-columns:
+        1.15fr 0.85fr;
 
-      gap: 80px;
+      align-items: center;
+
+      gap: 55px;
+
     }
 
+
     .contact h2 {
-      max-width: 850px;
+
+      max-width: 760px;
 
       margin-bottom: 0;
 
-      font-size: clamp(50px, 5vw, 76px);
+      font-size:
+        clamp(42px, 4vw, 60px);
+
       line-height: 1.02;
+
       letter-spacing: -0.035em;
+
     }
+
 
     .contact__copy {
+
       max-width: 500px;
+
     }
 
+
     .contact__copy p {
-      margin-bottom: 28px;
+
+      margin-bottom: 20px;
 
       color: #b6b6b6;
 
-      font-size: 16px;
-      line-height: 1.75;
+      font-size: 15px;
+
+      line-height: 1.7;
+
     }
 
+
+    .contact-actions {
+
+      display: flex;
+
+      align-items: center;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+    }
+
+
     .contact-button {
+
       display: inline-block;
 
-      padding: 15px 23px;
+      padding: 13px 20px;
 
       border: 1px solid #777;
 
       color: white;
 
       font-size: 13px;
+
       text-decoration: none;
 
       transition:
         background 0.2s ease,
         color 0.2s ease;
+
     }
 
+
     .contact-button:hover {
+
       background: white;
+
       color: #222;
+
     }
+
+
+    .contact-phone {
+
+      color: #b6b6b6;
+
+      font-size: 13px;
+
+      text-decoration: none;
+
+    }
+
+
+    .contact-phone:hover {
+
+      color: white;
+
+    }
+
 
 
     /* =========================================================
@@ -703,32 +1056,47 @@
     ========================================================= */
 
     .site-footer {
-      padding: 55px 0;
+
+      padding: 32px 0;
 
       background: #171717;
+
       color: #888;
+
     }
 
+
     .site-footer__inner {
+
       display: flex;
-      align-items: flex-end;
+
+      align-items: center;
       justify-content: space-between;
 
       gap: 40px;
+
     }
+
 
     .site-footer__logo {
-      width: 185px;
+
+      width: 150px;
 
       filter: invert(1);
+
       opacity: 0.85;
+
     }
+
 
     .site-footer p {
+
       margin: 0;
 
-      font-size: 12px;
+      font-size: 11px;
+
     }
+
 
 
     /* =========================================================
@@ -738,41 +1106,75 @@
     @media (max-width: 1050px) {
 
       .container {
-        width: calc(100% - 50px);
+
+        width:
+          calc(100% - 50px);
+
       }
+
 
       .hero {
-        grid-template-columns: 1fr 1fr;
+
+        grid-template-columns:
+          1fr 1fr;
+
       }
+
 
       .hero__content {
-        padding: 70px 45px;
+
+        padding:
+          60px 42px;
+
       }
+
 
       .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
       }
+
 
       .section-heading {
-        grid-template-columns: 1fr;
-        gap: 25px;
+
+        grid-template-columns:
+          1fr;
+
+        gap: 22px;
+
       }
+
 
       .property-feature__content {
-        padding: 60px;
+
+        padding: 50px;
+
       }
+
 
       .about__grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
+
+        grid-template-columns:
+          1fr;
+
+        gap: 25px;
+
       }
 
+
       .contact__inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
+
+        grid-template-columns:
+          1fr;
+
+        gap: 30px;
+
       }
 
     }
+
 
 
     /* =========================================================
@@ -782,143 +1184,270 @@
     @media (max-width: 720px) {
 
       .container {
-        width: calc(100% - 40px);
+
+        width:
+          calc(100% - 40px);
+
       }
+
 
       .site-header__inner {
-        min-height: 90px;
+
+        min-height: 84px;
+
       }
+
 
       .site-logo {
-        width: 180px;
+
+        width: 175px;
+
       }
+
 
       .site-nav {
+
         display: none;
+
       }
+
 
       .hero {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
+
       }
+
 
       .hero__content {
-        padding: 65px 22px 55px;
+
+        padding:
+          55px 22px 48px;
+
       }
+
 
       .hero h1 {
-        font-size: 51px;
+
+        font-size: 48px;
+
       }
+
 
       .hero__intro {
+
         font-size: 16px;
+
       }
+
 
       .hero__image {
-        min-height: 390px;
+
+        min-height: 340px;
+
       }
+
 
       .services {
-        padding-top: 75px;
+
+        padding-top: 55px;
+
       }
+
 
       .services__intro {
-        margin-bottom: 48px;
+
+        margin-bottom: 35px;
+
       }
+
 
       .services__intro h2 {
-        font-size: 45px;
+
+        font-size: 39px;
+
       }
+
 
       .services-grid {
-        grid-template-columns: 1fr;
 
-        width: calc(100% - 24px);
+        grid-template-columns:
+          1fr;
+
+        width:
+          calc(100% - 24px);
+
       }
+
 
       .service {
-        min-height: 335px;
 
-        padding: 46px 26px;
+        min-height: 270px;
+
+        padding:
+          35px 24px;
+
       }
+
+
+      .service__icon {
+
+        width: 46px;
+        height: 46px;
+
+      }
+
 
       .service h3 {
-        font-size: 30px;
+
+        font-size: 28px;
+
       }
+
 
       .work {
-        padding: 85px 0;
+
+        padding: 60px 0;
+
       }
+
 
       .section-heading {
-        margin-bottom: 45px;
+
+        margin-bottom: 35px;
+
       }
+
 
       .section-heading h2 {
-        font-size: 46px;
+
+        font-size: 42px;
+
       }
+
 
       .work-grid {
-        grid-template-columns: 1fr;
 
-        gap: 55px;
+        grid-template-columns:
+          1fr;
+
+        gap: 45px;
+
       }
 
-      .work-item--portrait .work-item__image,
-      .work-item--landscape .work-item__image {
+
+      .work-item--portrait
+      .work-item__image,
+
+      .work-item--landscape
+      .work-item__image {
+
         aspect-ratio: 4 / 3;
+
       }
+
 
       .property-feature {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
+
       }
+
 
       .property-feature__image {
-        min-height: 400px;
+
+        min-height: 320px;
+
       }
+
 
       .property-feature__content {
-        padding: 70px 22px;
+
+        padding:
+          50px 22px;
+
       }
+
 
       .property-feature h2 {
-        font-size: 44px;
+
+        font-size: 40px;
+
       }
+
 
       .about {
-        padding: 80px 0;
+
+        padding: 55px 0;
+
       }
+
 
       .about h2 {
-        font-size: 43px;
+
+        font-size: 38px;
+
       }
+
 
       .about-points {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
+
       }
+
 
       .about-point {
-        padding: 20px 0;
 
-        border-bottom: 1px solid var(--border);
+        padding:
+          16px 0;
+
+        border-bottom:
+          1px solid var(--border);
+
       }
+
 
       .contact {
-        padding: 80px 0;
+
+        padding: 55px 0;
+
       }
+
 
       .contact h2 {
-        font-size: 46px;
+
+        font-size: 42px;
+
       }
 
+
+      .site-footer {
+
+        padding: 28px 0;
+
+      }
+
+
       .site-footer__inner {
+
         flex-direction: column;
+
         align-items: flex-start;
+
+        gap: 20px;
+
       }
 
     }
 
   </style>
+
 </head>
+
 
 
 <body>
@@ -932,7 +1461,12 @@
 
     <div class="container site-header__inner">
 
-      <a class="site-logo" href="#" aria-label="A Offord Property Services home">
+
+      <a
+        class="site-logo"
+        href="#"
+        aria-label="A Offord Property Services home"
+      >
 
         <img
           src="images/a-offord-logo.png"
@@ -942,7 +1476,11 @@
       </a>
 
 
-      <nav class="site-nav" aria-label="Main navigation">
+
+      <nav
+        class="site-nav"
+        aria-label="Main navigation"
+      >
 
         <a href="#services">
           Services
@@ -956,7 +1494,10 @@
           About
         </a>
 
-        <a href="#contact" class="nav-contact">
+        <a
+          href="#contact"
+          class="nav-contact"
+        >
           Get in touch
         </a>
 
@@ -977,23 +1518,31 @@
 
     <section class="hero">
 
+
       <div class="hero__content">
+
 
         <p class="eyebrow">
           A OFFORD PROPERTY SERVICES
         </p>
 
+
         <h1>
           Reliable help for your home or property.
         </h1>
 
+
         <p class="hero__intro">
           Practical, professional help with maintenance,
-          repairs, decorating and everyday jobs around
-          your property.
+          repairs, fitting, painting and everyday jobs
+          around your property.
         </p>
 
-        <a href="#services" class="hero-link">
+
+        <a
+          href="#services"
+          class="hero-link"
+        >
 
           View our services
 
@@ -1003,17 +1552,20 @@
 
         </a>
 
+
       </div>
+
 
 
       <div class="hero__image">
 
         <img
           src="images/property-exterior.png"
-          alt="Residential property maintained by A Offord Property Services"
+          alt="Residential property worked on by A Offord Property Services"
         >
 
       </div>
+
 
     </section>
 
@@ -1023,110 +1575,198 @@
          SERVICES
     ====================================================== -->
 
-    <section class="services" id="services">
+    <section
+      class="services"
+      id="services"
+    >
+
 
       <div class="container services__intro">
+
 
         <p class="eyebrow eyebrow--light">
           SERVICES
         </p>
+
 
         <h2>
           Reliable help across your<br>
           home or property.
         </h2>
 
+
         <p>
-          Straightforward property care, from the jobs that
-          have been sitting on the list to ongoing maintenance
-          and practical improvements.
+          From everyday jobs around the home to fitting,
+          painting, garden work and practical improvements.
         </p>
 
+
       </div>
+
 
 
       <div class="services-grid">
 
 
-        <!-- GENERAL HANDYMAN -->
+        <!-- =================================================
+             GENERAL HANDYMAN
+        ================================================== -->
 
         <article class="service">
 
-          <div class="service__icon" aria-hidden="true">
+
+          <div
+            class="service__icon"
+            aria-hidden="true"
+          >
 
             <svg viewBox="0 0 64 64">
 
-              <path d="M14 8l20 20"></path>
+              <path
+                d="
+                  M17 15
+                  L28 9
+                  L35 16
+                  L27 24
+                  Z
+                "
+              ></path>
 
-              <path d="M20 4l7 7-10 10-7-7z"></path>
+              <path
+                d="
+                  M27 24
+                  L49 46
+                "
+              ></path>
 
-              <path d="M31 29l21 21"></path>
+              <path
+                d="
+                  M49 46
+                  L44 51
+                "
+              ></path>
 
-              <path d="M47 46l7 7-6 6-7-7"></path>
-
-              <path d="M49 8L29 28"></path>
-
-              <path d="M46 6l11 11"></path>
+              <path
+                d="
+                  M44 51
+                  L22 29
+                "
+              ></path>
 
             </svg>
 
           </div>
 
+
           <span class="service__line"></span>
+
 
           <h3>
             General Handyman
           </h3>
 
+
           <p>
-            Shelves, fittings, adjustments, repairs and
-            everyday jobs around the home.
+            Everyday DIY jobs, home repairs and practical
+            help around the property.
           </p>
+
 
         </article>
 
 
 
-        <!-- PROPERTY MAINTENANCE -->
+        <!-- =================================================
+             FITTING & INSTALLATION
+        ================================================== -->
 
         <article class="service">
 
-          <div class="service__icon" aria-hidden="true">
+
+          <div
+            class="service__icon"
+            aria-hidden="true"
+          >
 
             <svg viewBox="0 0 64 64">
 
-              <path d="M7 31L32 10l25 21"></path>
+              <!-- shelf -->
+              <path
+                d="M12 18 H48"
+              ></path>
 
-              <path d="M14 27v29h36V27"></path>
+              <path
+                d="M12 22 H48"
+              ></path>
 
-              <path d="M27 56V39h10v17"></path>
+              <!-- wall brackets -->
+              <path
+                d="M18 22 V31 H25"
+              ></path>
+
+              <path
+                d="M41 22 V31 H34"
+              ></path>
+
+              <!-- drill -->
+              <path
+                d="
+                  M27 38
+                  H44
+                  L49 42
+                  H44
+                  V47
+                  H31
+                  V43
+                  H27
+                  Z
+                "
+              ></path>
+
+              <path
+                d="
+                  M34 47
+                  V55
+                "
+              ></path>
 
             </svg>
 
           </div>
 
+
           <span class="service__line"></span>
 
+
           <h3>
-            Property Maintenance
+            Fitting &amp; Installation
           </h3>
 
+
           <p>
-            General maintenance and ongoing repair work for
-            homeowners, landlords and rental properties.
+            Flat-pack furniture, blinds, mirrors,
+            artwork and household fittings.
           </p>
+
 
         </article>
 
 
 
-        <!-- DECORATING -->
+        <!-- =================================================
+             PAINTING & IMPROVEMENTS
+        ================================================== -->
 
         <article class="service">
 
-          <div class="service__icon" aria-hidden="true">
+
+          <div
+            class="service__icon"
+            aria-hidden="true"
+          >
 
             <svg viewBox="0 0 64 64">
+
 
               <rect
                 x="10"
@@ -1136,9 +1776,24 @@
                 rx="2"
               ></rect>
 
-              <path d="M46 19h7v12H30"></path>
 
-              <path d="M30 31v7"></path>
+              <path
+                d="
+                  M46 19
+                  H53
+                  V31
+                  H30
+                "
+              ></path>
+
+
+              <path
+                d="
+                  M30 31
+                  V38
+                "
+              ></path>
+
 
               <rect
                 x="26"
@@ -1148,65 +1803,109 @@
                 rx="3"
               ></rect>
 
+
             </svg>
 
           </div>
 
+
           <span class="service__line"></span>
 
+
           <h3>
-            Decorating &amp; Finishing
+            Painting &amp; Improvements
           </h3>
 
+
           <p>
-            Painting, preparation, touch ups and finishing
-            work to keep your property looking its best.
+            Painting, custom panelling and practical
+            improvements around the home.
           </p>
+
 
         </article>
 
 
 
-        <!-- REPAIRS -->
+        <!-- =================================================
+             OUTDOOR & GARDEN
+        ================================================== -->
 
         <article class="service">
 
-          <div class="service__icon" aria-hidden="true">
+
+          <div
+            class="service__icon"
+            aria-hidden="true"
+          >
 
             <svg viewBox="0 0 64 64">
 
+
+              <!-- stem -->
               <path
-                d="M17 8
-                c-4 5-4 12 1 17
-                4 4 10 5 15 2
-                l22 22-7 7-22-22
-                c-5 3-11 2-15-2
-                -5-5-5-12-1-17
-                l8 8 7-7z"
+                d="
+                  M31 54
+                  C31 43 32 32 37 22
+                "
               ></path>
 
-              <path d="M38 32L53 17"></path>
 
-              <path d="M50 14l5-5 4 4-5 5"></path>
+              <!-- left leaf -->
+              <path
+                d="
+                  M31 39
+                  C23 39 17 35 15 27
+                  C23 26 29 30 31 39
+                  Z
+                "
+              ></path>
+
+
+              <!-- right leaf -->
+              <path
+                d="
+                  M35 30
+                  C36 21 42 15 51 13
+                  C51 22 45 29 35 30
+                  Z
+                "
+              ></path>
+
+
+              <!-- ground -->
+              <path
+                d="
+                  M17 54
+                  H48
+                "
+              ></path>
+
 
             </svg>
 
           </div>
 
+
           <span class="service__line"></span>
 
+
           <h3>
-            Repairs &amp; Improvements
+            Outdoor &amp; Garden
           </h3>
 
+
           <p>
-            Small improvements, remedial work and practical
-            upgrades around the property.
+            Garden clearance, patio cleaning and
+            smaller landscaping projects.
           </p>
+
 
         </article>
 
+
       </div>
+
 
     </section>
 
@@ -1216,12 +1915,17 @@
          RECENT WORK
     ====================================================== -->
 
-    <section class="work" id="work">
+    <section
+      class="work"
+      id="work"
+    >
+
 
       <div class="container">
 
 
         <div class="section-heading">
+
 
           <div>
 
@@ -1237,11 +1941,15 @@
           </div>
 
 
+
           <p class="section-heading__copy">
-            From straightforward repairs to fitting and
-            property improvements, every job is approached
-            with care and attention to detail.
+
+            From everyday repairs to fitting and home
+            improvements, every job is approached with
+            care and attention to detail.
+
           </p>
+
 
         </div>
 
@@ -1250,7 +1958,10 @@
         <div class="work-grid">
 
 
-          <figure class="work-item work-item--portrait">
+          <figure
+            class="work-item work-item--portrait"
+          >
+
 
             <div class="work-item__image">
 
@@ -1261,6 +1972,7 @@
               >
 
             </div>
+
 
             <figcaption>
 
@@ -1274,11 +1986,15 @@
 
             </figcaption>
 
+
           </figure>
 
 
 
-          <figure class="work-item work-item--landscape">
+          <figure
+            class="work-item work-item--landscape"
+          >
+
 
             <div class="work-item__image">
 
@@ -1289,6 +2005,7 @@
               >
 
             </div>
+
 
             <figcaption>
 
@@ -1302,11 +2019,15 @@
 
             </figcaption>
 
+
           </figure>
+
 
         </div>
 
+
       </div>
+
 
     </section>
 
@@ -1318,35 +2039,44 @@
 
     <section class="property-feature">
 
+
       <div class="property-feature__image">
 
         <img
           src="images/property-exterior.png"
-          alt="Property exterior"
+          alt="Residential property exterior"
           loading="lazy"
         >
 
       </div>
 
 
+
       <div class="property-feature__content">
+
 
         <p class="eyebrow">
           PROPERTY CARE
         </p>
 
+
         <h2>
           Small jobs or ongoing maintenance.
         </h2>
 
+
         <p>
+
           From one-off repairs and improvements to ongoing
-          property maintenance, the aim is to provide
+          jobs around the property, the aim is to provide
           straightforward, dependable help and a properly
           finished job.
+
         </p>
 
+
       </div>
+
 
     </section>
 
@@ -1356,7 +2086,11 @@
          ABOUT
     ====================================================== -->
 
-    <section class="about" id="about">
+    <section
+      class="about"
+      id="about"
+    >
+
 
       <div class="container about__grid">
 
@@ -1370,18 +2104,24 @@
         </div>
 
 
+
         <div class="about__content">
+
 
           <h2>
             A straightforward approach to property maintenance.
           </h2>
 
+
           <p>
-            Whether it is a list of smaller jobs, ongoing
-            maintenance, decorating or a practical improvement
+
+            Whether it is a list of smaller jobs, fitting,
+            painting, garden work or a practical improvement
             to your property, the aim is simple: reliable work,
             clear communication and a finish you are happy with.
+
           </p>
+
 
 
           <div class="about-points">
@@ -1400,6 +2140,7 @@
             </div>
 
 
+
             <div class="about-point">
 
               <strong>
@@ -1411,6 +2152,7 @@
               </span>
 
             </div>
+
 
 
             <div class="about-point">
@@ -1428,9 +2170,12 @@
 
           </div>
 
+
         </div>
 
+
       </div>
+
 
     </section>
 
@@ -1440,39 +2185,71 @@
          CONTACT
     ====================================================== -->
 
-    <section class="contact" id="contact">
+    <section
+      class="contact"
+      id="contact"
+    >
+
 
       <div class="container contact__inner">
 
 
         <div>
 
+
           <p class="eyebrow eyebrow--light">
             GET IN TOUCH
           </p>
+
 
           <h2>
             Got a job that needs doing?
           </h2>
 
+
         </div>
+
 
 
         <div class="contact__copy">
 
+
           <p>
-            Tell us what you need help with and we can discuss
-            the job and the best way forward.
+
+            Tell us what you need help with and we can
+            discuss the job and the best way forward.
+
           </p>
 
-          <a href="#" class="contact-button">
-            Contact A Offord
-          </a>
+
+
+          <div class="contact-actions">
+
+
+            <a
+              href="mailto:andy@ao-property-services.com"
+              class="contact-button"
+            >
+              Contact A Offord
+            </a>
+
+
+            <a
+              href="tel:07506824981"
+              class="contact-phone"
+            >
+              07506 824981
+            </a>
+
+
+          </div>
+
 
         </div>
 
 
       </div>
+
 
     </section>
 
@@ -1486,6 +2263,7 @@
   ====================================================== -->
 
   <footer class="site-footer">
+
 
     <div class="container site-footer__inner">
 
@@ -1504,8 +2282,10 @@
 
     </div>
 
+
   </footer>
 
 
 </body>
+
 </html>
